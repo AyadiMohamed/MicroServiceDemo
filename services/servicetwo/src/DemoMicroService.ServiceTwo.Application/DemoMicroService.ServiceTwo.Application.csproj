@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DemoMicroService.ServiceTwo</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AutoMapper" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.Ddd.Application" Version="8.0.4" />
+    <ProjectReference Include="..\..\..\..\shared\DemoMicroService.Hosting.Shared\DemoMicroService.Hosting.Shared.csproj" />
+    <ProjectReference Include="..\DemoMicroService.ServiceTwo.Application.Contracts\DemoMicroService.ServiceTwo.Application.Contracts.csproj" />
+    <ProjectReference Include="..\DemoMicroService.ServiceTwo.Domain\DemoMicroService.ServiceTwo.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

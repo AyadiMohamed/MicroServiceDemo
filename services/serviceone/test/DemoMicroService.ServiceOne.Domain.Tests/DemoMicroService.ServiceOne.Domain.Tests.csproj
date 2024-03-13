@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DemoMicroService.ServiceOne</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DemoMicroService.ServiceOne.Domain\DemoMicroService.ServiceOne.Domain.csproj" />
+    <ProjectReference Include="..\DemoMicroService.ServiceOne.TestBase\DemoMicroService.ServiceOne.TestBase.csproj" />
+  </ItemGroup>
+
+
+</Project>

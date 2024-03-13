@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.Administration.Domain.Shared": {
+      "path": "src/DemoMicroService.Administration.Domain.Shared/DemoMicroService.Administration.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.Domain": {
+      "path": "src/DemoMicroService.Administration.Domain/DemoMicroService.Administration.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.Application.Contracts": {
+      "path": "src/DemoMicroService.Administration.Application.Contracts/DemoMicroService.Administration.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.Application": {
+      "path": "src/DemoMicroService.Administration.Application/DemoMicroService.Administration.Application.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.EntityFrameworkCore": {
+      "path": "src/DemoMicroService.Administration.EntityFrameworkCore/DemoMicroService.Administration.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.MongoDB": {
+      "path": "src/DemoMicroService.Administration.MongoDB/DemoMicroService.Administration.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.HttpApi": {
+      "path": "src/DemoMicroService.Administration.HttpApi/DemoMicroService.Administration.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.HttpApi.Client": {
+      "path": "src/DemoMicroService.Administration.HttpApi.Client/DemoMicroService.Administration.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.Administration.TestBase": {
+      "path": "test/DemoMicroService.Administration.TestBase/DemoMicroService.Administration.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.Administration.EntityFrameworkCore.Tests": {
+      "path": "test/DemoMicroService.Administration.EntityFrameworkCore.Tests/DemoMicroService.Administration.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.Administration.MongoDB.Tests": {
+      "path": "test/DemoMicroService.Administration.MongoDB.Tests/DemoMicroService.Administration.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.Administration.Domain.Tests": {
+      "path": "test/DemoMicroService.Administration.Domain.Tests/DemoMicroService.Administration.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.Administration.Application.Tests": {
+      "path": "test/DemoMicroService.Administration.Application.Tests/DemoMicroService.Administration.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.Administration.HttpApi.Host": {
+      "path": "host/DemoMicroService.Administration.HttpApi.Host/DemoMicroService.Administration.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "DemoMicroService.Administration.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/DemoMicroService.Administration.HttpApi.Client.ConsoleTestApp/DemoMicroService.Administration.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.Administration.IdentityServer": {
+      "path": "host/DemoMicroService.Administration.IdentityServer/DemoMicroService.Administration.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "DemoMicroService.Administration.Host.Shared": {
+      "path": "host/DemoMicroService.Administration.Host.Shared/DemoMicroService.Administration.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

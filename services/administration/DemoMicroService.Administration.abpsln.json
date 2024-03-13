@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "DemoMicroService.Administration": {
+      "path": "DemoMicroService.Administration.abpmdl.json"
+    }
+  }
+}

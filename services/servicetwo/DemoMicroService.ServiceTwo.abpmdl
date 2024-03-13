@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.ServiceTwo.Domain.Shared": {
+      "path": "src/DemoMicroService.ServiceTwo.Domain.Shared/DemoMicroService.ServiceTwo.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.Domain": {
+      "path": "src/DemoMicroService.ServiceTwo.Domain/DemoMicroService.ServiceTwo.Domain.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.Application.Contracts": {
+      "path": "src/DemoMicroService.ServiceTwo.Application.Contracts/DemoMicroService.ServiceTwo.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.Application": {
+      "path": "src/DemoMicroService.ServiceTwo.Application/DemoMicroService.ServiceTwo.Application.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.EntityFrameworkCore": {
+      "path": "src/DemoMicroService.ServiceTwo.EntityFrameworkCore/DemoMicroService.ServiceTwo.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.MongoDB": {
+      "path": "src/DemoMicroService.ServiceTwo.MongoDB/DemoMicroService.ServiceTwo.MongoDB.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.HttpApi": {
+      "path": "src/DemoMicroService.ServiceTwo.HttpApi/DemoMicroService.ServiceTwo.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.HttpApi.Client": {
+      "path": "src/DemoMicroService.ServiceTwo.HttpApi.Client/DemoMicroService.ServiceTwo.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "DemoMicroService.ServiceTwo.TestBase": {
+      "path": "test/DemoMicroService.ServiceTwo.TestBase/DemoMicroService.ServiceTwo.TestBase.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.ServiceTwo.EntityFrameworkCore.Tests": {
+      "path": "test/DemoMicroService.ServiceTwo.EntityFrameworkCore.Tests/DemoMicroService.ServiceTwo.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.ServiceTwo.MongoDB.Tests": {
+      "path": "test/DemoMicroService.ServiceTwo.MongoDB.Tests/DemoMicroService.ServiceTwo.MongoDB.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.ServiceTwo.Domain.Tests": {
+      "path": "test/DemoMicroService.ServiceTwo.Domain.Tests/DemoMicroService.ServiceTwo.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.ServiceTwo.Application.Tests": {
+      "path": "test/DemoMicroService.ServiceTwo.Application.Tests/DemoMicroService.ServiceTwo.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.ServiceTwo.HttpApi.Host": {
+      "path": "host/DemoMicroService.ServiceTwo.HttpApi.Host/DemoMicroService.ServiceTwo.HttpApi.Host.abppkg",
+      "folder": "host"
+    },
+    "DemoMicroService.ServiceTwo.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/DemoMicroService.ServiceTwo.HttpApi.Client.ConsoleTestApp/DemoMicroService.ServiceTwo.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "DemoMicroService.ServiceTwo.AuthServer": {
+      "path": "host/DemoMicroService.ServiceTwo.AuthServer/DemoMicroService.ServiceTwo.AuthServer.abppkg",
+      "folder": "host"
+    },
+    "DemoMicroService.ServiceTwo.Host.Shared": {
+      "path": "host/DemoMicroService.ServiceTwo.Host.Shared/DemoMicroService.ServiceTwo.Host.Shared.abppkg",
+      "folder": "host"
+    }
+  }
+}

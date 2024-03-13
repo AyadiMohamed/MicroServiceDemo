@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "DemoMicroService.SaaS": {
+      "path": "DemoMicroService.SaaS.abpmdl.json"
+    }
+  }
+}

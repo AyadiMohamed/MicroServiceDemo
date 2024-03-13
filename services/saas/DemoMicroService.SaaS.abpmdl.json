@@ -1,0 +1,79 @@
+{
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {},
+      "host": {}
+    }
+  },
+  "packages": {
+    "DemoMicroService.SaaS.Domain.Shared": {
+      "path": "src/DemoMicroService.SaaS.Domain.Shared/DemoMicroService.SaaS.Domain.Shared.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.Domain": {
+      "path": "src/DemoMicroService.SaaS.Domain/DemoMicroService.SaaS.Domain.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.Application.Contracts": {
+      "path": "src/DemoMicroService.SaaS.Application.Contracts/DemoMicroService.SaaS.Application.Contracts.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.Application": {
+      "path": "src/DemoMicroService.SaaS.Application/DemoMicroService.SaaS.Application.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.EntityFrameworkCore": {
+      "path": "src/DemoMicroService.SaaS.EntityFrameworkCore/DemoMicroService.SaaS.EntityFrameworkCore.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.MongoDB": {
+      "path": "src/DemoMicroService.SaaS.MongoDB/DemoMicroService.SaaS.MongoDB.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.HttpApi": {
+      "path": "src/DemoMicroService.SaaS.HttpApi/DemoMicroService.SaaS.HttpApi.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.HttpApi.Client": {
+      "path": "src/DemoMicroService.SaaS.HttpApi.Client/DemoMicroService.SaaS.HttpApi.Client.abppkg.json",
+      "folder": "src"
+    },
+    "DemoMicroService.SaaS.TestBase": {
+      "path": "test/DemoMicroService.SaaS.TestBase/DemoMicroService.SaaS.TestBase.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.SaaS.EntityFrameworkCore.Tests": {
+      "path": "test/DemoMicroService.SaaS.EntityFrameworkCore.Tests/DemoMicroService.SaaS.EntityFrameworkCore.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.SaaS.MongoDB.Tests": {
+      "path": "test/DemoMicroService.SaaS.MongoDB.Tests/DemoMicroService.SaaS.MongoDB.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.SaaS.Domain.Tests": {
+      "path": "test/DemoMicroService.SaaS.Domain.Tests/DemoMicroService.SaaS.Domain.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.SaaS.Application.Tests": {
+      "path": "test/DemoMicroService.SaaS.Application.Tests/DemoMicroService.SaaS.Application.Tests.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.SaaS.HttpApi.Host": {
+      "path": "host/DemoMicroService.SaaS.HttpApi.Host/DemoMicroService.SaaS.HttpApi.Host.abppkg.json",
+      "folder": "host"
+    },
+    "DemoMicroService.SaaS.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/DemoMicroService.SaaS.HttpApi.Client.ConsoleTestApp/DemoMicroService.SaaS.HttpApi.Client.ConsoleTestApp.abppkg.json",
+      "folder": "test"
+    },
+    "DemoMicroService.SaaS.IdentityServer": {
+      "path": "host/DemoMicroService.SaaS.IdentityServer/DemoMicroService.SaaS.IdentityServer.abppkg.json",
+      "folder": "host"
+    },
+    "DemoMicroService.SaaS.Host.Shared": {
+      "path": "host/DemoMicroService.SaaS.Host.Shared/DemoMicroService.SaaS.Host.Shared.abppkg.json",
+      "folder": "host"
+    }
+  }
+}

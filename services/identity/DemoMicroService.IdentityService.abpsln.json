@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "DemoMicroService.IdentityService": {
+      "path": "DemoMicroService.IdentityService.abpmdl.json"
+    }
+  }
+}

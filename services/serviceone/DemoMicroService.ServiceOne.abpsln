@@ -1,0 +1,7 @@
+{
+  "modules": {
+    "DemoMicroService.ServiceOne": {
+      "path": "DemoMicroService.ServiceOne.abpmdl"
+    }
+  }
+}

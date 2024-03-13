@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DemoMicroService.ServiceOne</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="8.0.4" />
+    <PackageReference Include="Volo.Abp.EventBus.RabbitMQ" Version="8.0.4" />
+    <ProjectReference Include="..\..\..\..\shared\DemoMicroService.Hosting.Shared\DemoMicroService.Hosting.Shared.csproj" />
+    <ProjectReference Include="..\DemoMicroService.ServiceOne.Application.Contracts\DemoMicroService.ServiceOne.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>
