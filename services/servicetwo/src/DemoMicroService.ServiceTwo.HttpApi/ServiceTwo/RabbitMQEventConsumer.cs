@@ -20,7 +20,7 @@ namespace DemoMicroService.ServiceTwo
         {
             var channel = _connection.CreateModel();
             channel.QueueDeclare(queue: queueName,
-                                 durable: false,
+                                 durable: true,
                                  exclusive: false,
                                  autoDelete: false,
                                  arguments: null);

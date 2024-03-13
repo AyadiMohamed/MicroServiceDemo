@@ -20,7 +20,7 @@ namespace DemoMicroService.ServiceOne
             using (var channel = _connection.CreateModel())
             {
                 channel.QueueDeclare(queue: queueName,
-                                     durable: false,
+                                     durable: true, 
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
@@ -33,6 +33,7 @@ namespace DemoMicroService.ServiceOne
                                      body: body);
             }
         }
-    }
 
+
+    }
 }
