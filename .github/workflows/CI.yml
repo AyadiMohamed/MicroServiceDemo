@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: main
+
+jobs:
+ continuous-integration :
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v2
+
+      - name: Set up .Net build env 
+        uses: actions/setup-dotnet@v2
+        with:
+            dotnet-version: '8.0.x'
+            include-prerelease: true
+
+      - name: Restore dependencies 
+        run: dotnet restore
+      - name: Build the Gateway Docker image
+        run: docker build . --file gateway/DemoMicroService.Gateway/Dockerfile --tag gateway:dev
+      - name: Build the AuthServer Docker image
+        run: docker build . --file apps/DemoMicroService.AuthServer/Dockerfile --tag Aythserver:dev
+      - name: Build the Administration Docker image
+        run: docker build . --file services/administration/host/DemoMicroService.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
+      - name: Build the IdentityService Docker image
+        run: docker build . --file services/identity/host/DemoMicroService.IdentityService.HttpApi.Host/Dockerfile --tag identityservice:dev
+      - name: Build the SaaS Docker image
+        run: docker build . --file services/saas/host/DemoMicroService.SaaSService.HttpApi.Host/Dockerfile --tag saas:dev
+      - name: Build the ServiceOne Docker image
+        run: docker build . --file services/serviceone/host/DemoMicroService.ServiceOne.HttpApi.Host/Dockerfile --tag serviceone:dev
+      - name: Build the ServiceTwo Docker image
+        run: docker build . --file services/serviceone/host/DemoMicroService.ServiceTwo.HttpApi.Host/Dockerfile --tag servicetwo:dev
+        
