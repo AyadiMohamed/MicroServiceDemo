@@ -24,13 +24,13 @@ jobs:
       - name: Build the AuthServer Docker image
         run: docker build . --file apps/DemoMicroService.AuthServer/Dockerfile --tag authserver:dev
       - name: Build the Administration Docker image
-        run: docker build . --file services/administration/host/DemoMicroService.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
+        run: docker build . --file services/administration/DemoMicroService.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
       - name: Build the IdentityService Docker image
-        run: docker build . --file services/identity/host/DemoMicroService.IdentityService.HttpApi.Host/Dockerfile --tag identityservice:dev
+        run: docker build . --file services/identity/DemoMicroService.IdentityService.HttpApi.Host/Dockerfile --tag identityservice:dev
       - name: Build the SaaS Docker image
-        run: docker build . --file services/saas/host/DemoMicroService.SaaSService.HttpApi.Host/Dockerfile --tag saas:dev
+        run: docker build . --file services/saas/DemoMicroService.SaaSService.HttpApi.Host/Dockerfile --tag saas:dev
       - name: Build the ServiceOne Docker image
-        run: docker build . --file services/serviceone/host/DemoMicroService.ServiceOne.HttpApi.Host/Dockerfile --tag serviceone:dev
+        run: docker build . --file services/serviceone/src/DemoMicroService.ServiceOne.HttpApi.Host/Dockerfile --tag serviceone:dev
       - name: Build the ServiceTwo Docker image
-        run: docker build . --file services/serviceone/host/DemoMicroService.ServiceTwo.HttpApi.Host/Dockerfile --tag servicetwo:dev
+        run: docker build . --file services/serviceone/src/DemoMicroService.ServiceTwo.HttpApi.Host/Dockerfile --tag servicetwo:dev
         
