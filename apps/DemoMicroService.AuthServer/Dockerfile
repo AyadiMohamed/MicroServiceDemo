@@ -1,11 +1,13 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER app
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 8080
+EXPOSE 8081
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["services/administration/NuGet.Config", "services/administration/"]
 COPY ["services/identity/NuGet.Config", "services/identity/"]
@@ -22,13 +24,14 @@ COPY ["services/saas/src/DemoMicroService.SaaS.Domain/DemoMicroService.SaaS.Doma
 COPY ["services/saas/src/DemoMicroService.SaaS.Domain.Shared/DemoMicroService.SaaS.Domain.Shared.csproj", "services/saas/src/DemoMicroService.SaaS.Domain.Shared/"]
 COPY ["shared/DemoMicroService.Microservice.Shared/DemoMicroService.Microservice.Shared.csproj", "shared/DemoMicroService.Microservice.Shared/"]
 COPY ["shared/DemoMicroService.Hosting.Shared/DemoMicroService.Hosting.Shared.csproj", "shared/DemoMicroService.Hosting.Shared/"]
-RUN dotnet restore "apps/DemoMicroService.AuthServer/DemoMicroService.AuthServer.csproj"
+RUN dotnet restore "./apps/DemoMicroService.AuthServer/./DemoMicroService.AuthServer.csproj"
 COPY . .
 WORKDIR "/src/apps/DemoMicroService.AuthServer"
-RUN dotnet build "DemoMicroService.AuthServer.csproj" -c Release -o /app/build
+RUN dotnet build "./DemoMicroService.AuthServer.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "DemoMicroService.AuthServer.csproj" -c Release -o /app/publish /p:UseAppHost=false
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./DemoMicroService.AuthServer.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
