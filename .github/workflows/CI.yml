@@ -24,7 +24,7 @@ jobs:
       - name: Build the AuthServer Docker image
         run: docker build . --file apps/DemoMicroService.AuthServer/Dockerfile --tag authserver:dev
       - name: Build the Administration Docker image
-        run: docker build . --file services/administration/DemoMicroService.AdministrationService.HttpApi.Host/Dockerfile --tag administration:dev
+        run: docker build . --file services/administration/DemoMicroService.Administration.HttpApi.Host/Dockerfile --tag administration:dev
       - name: Build the IdentityService Docker image
         run: docker build . --file services/identity/DemoMicroService.IdentityService.HttpApi.Host/Dockerfile --tag identityservice:dev
       - name: Build the SaaS Docker image
